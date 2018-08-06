@@ -1,0 +1,261 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2018-04-22 11:51:32
+ * @version $Id$
+ */
+
+
+.banner{
+	width: 100%;
+    float: left;
+    height: 253px;
+    background: url(../images/banner_img3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/*banner end*/
+.fabu{
+   width: 100%;
+   float: left;
+   padding-bottom: 300px;
+
+}
+.fabu_box{
+	width: 100%;
+	float: left;
+}
+
+.fabu_nav{
+	font-size: 4px;
+	margin-top: 20px;
+	margin-bottom: 33px;
+}
+.fabu_list{
+	width: 100%;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-around;
+
+}
+.fabu_list > div{
+	flex-basis:24%;
+	text-align: center;
+}
+.fabu_list > div a{
+	background: #cac9c9;
+	font-size: 6px;
+	width: 100%;
+	padding-top: 10%;
+	padding-bottom: 20%;
+	color: #434343;
+	transition:all .3s linear;
+	position: relative;
+}
+.fabu_list > div a span{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 48%;
+	left: 44%;
+	border:1px solid #fff;
+	border-radius: 100%;
+	overflow: hidden;
+	background: url(../images/fabu_list_san_bg.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 0;
+	transition:all .3s linear .3s;
+
+}
+
+.fabu_list > div a:hover{
+
+	background: #2072f9;
+	color: #fff;
+}
+.fabu_list > div a:hover span{
+
+	opacity: 1;
+}
+.fabu_search{
+	margin-top: 29px;
+	margin-bottom: 26px;
+	width: 100%;
+	text-align: right;
+}
+.fabu_search input{
+	width: 23%;
+	line-height: 50px;
+	background: url(../images/search_bg.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	border:0px;
+	border:1px solid #434343;
+}
+
+.fabu_flex_box{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 10%;
+    position: relative;
+}
+.fabu_flex_box input{
+	display: none;
+}
+
+.fabu_flex_box label{
+	display: block;
+	width: 5%;
+	line-height: 38px;
+	text-align: center;
+	position: absolute;
+	top: 96%;
+	left: 35%;
+	transition:all .3s linear;
+
+}
+
+#two{
+
+   left:40%;
+}
+#three{
+
+   left:45%;
+}
+#four{
+
+   left:50%;
+}
+#five{
+
+   left:55%;
+}
+#six{
+
+   left:60%;
+}
+
+
+
+
+
+.fabu_flex{
+
+	width: 600%;
+	display: flex;
+	transition:all .3s;
+}
+
+.febu_felx_1{
+	width: 17%;
+	display: flex;
+	flex-wrap:wrap;
+	background: #fff;
+}
+.febu_felx_1>div{
+	flex-basis:33%;
+	border:1px solid #dcdcdc;
+	text-align: center;
+
+}
+.febu_felx_1>div img{
+	width: 100%;
+
+}
+.febu_felx_1>div h2{
+	font-size: 5px;
+	color:#2072f9;
+}
+.febu_felx_1>div p{
+
+	font-size: 3px;
+	color: #3e3e3e;
+	margin-top: 3%;
+	margin-bottom: 10%;
+}
+
+.fabu_flex_box  input[name="sex"]:checked+label{
+
+    background: #2072f9;
+    color: #fff;
+}
+
+#btn_1:checked ~ .fabu_flex{
+
+	margin-left: 0%;
+}
+
+#btn_2:checked ~ .fabu_flex{
+
+	margin-left: -100%;
+}
+#btn_3:checked ~ .fabu_flex{
+
+	margin-left: -200%;
+}
+#btn_4: checked~ .fabu_flex{
+
+	margin-left: -300%;
+}
+#btn_5:checked ~ .fabu_flex{
+
+	margin-left: -400%;
+}
+#btn_6:checked ~ .fabu_flex{
+
+	margin-left: -500%;
+}
+/*  fabu end */
+
+@media screen and (max-width: 980px){
+
+  .fabu_search input {
+    width: 33%;
+    line-height: 30px;
+    background: url(../images/search_bg.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    border: 0px;
+    border: 1px solid #434343;
+}
+}
+
+@media screen and (max-width: 904px){
+
+  .fabu_flex_box label{
+	display: block;
+	width: 5%;
+	line-height: 26px;
+	text-align: center;
+	position: absolute;
+	top: 96%;
+	left: 35%;
+	transition:all .3s linear;
+}
+}
+
+@media screen and (max-width: 622px){
+
+.febu_felx_1{
+	width: 17%;
+	display: flex;
+	flex-wrap:wrap;
+	background: #fff;
+	
+
+}
+   .febu_felx_1>div{
+	flex-basis:32.5%;
+	border:1px solid #dcdcdc;
+	text-align: center;
+
+}
+
+}
+
+}
+
